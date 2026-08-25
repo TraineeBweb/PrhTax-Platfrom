@@ -1,0 +1,6 @@
+{
+  "name": "Client Intelligence & Bank Macro Suite",
+  "description": "Sophisticated dark workspace for video client meeting intelligence, bank statement to journal entry macro automation, and Drake Accounting reconciliation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

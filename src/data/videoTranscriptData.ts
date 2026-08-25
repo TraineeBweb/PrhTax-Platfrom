@@ -1,0 +1,86 @@
+import { VideoKeyMoment } from '../types';
+
+export const VIDEO_KEY_MOMENTS: VideoKeyMoment[] = [
+  {
+    timestamp: '00:00 - 01:05',
+    seconds: 0,
+    title: 'Call Initiation & Client Introduction',
+    speaker: 'Prashantt, Dhyan, Ansh',
+    summary: 'Discussion starts regarding the Drake Accounting automation goals and support account setup created by Yuvraj.',
+    category: 'context',
+  },
+  {
+    timestamp: '02:44',
+    seconds: 164,
+    title: 'Financial Statement Analysis & System Context',
+    speaker: 'Prashantt',
+    summary: 'Prashantt shares his screen and explains that the legacy Drake Software is primarily used for final data import & tax filing, not direct manipulation.',
+    category: 'workflow',
+  },
+  {
+    timestamp: '02:56',
+    seconds: 176,
+    title: 'Review of "Bank Macro SOP"',
+    speaker: 'Prashantt',
+    summary: 'Presents the standard operating procedure created for staff. Intent: Automate conversion of raw bank statement CSVs into journal entries.',
+    category: 'macro',
+  },
+  {
+    timestamp: '03:22',
+    seconds: 202,
+    title: 'Blank Macro Structure & 3 Core Fields',
+    speaker: 'Prashantt',
+    summary: 'Demonstrates the 3 essential data inputs required from Bank CSV: Date, Raw Description, and Amount.',
+    category: 'macro',
+  },
+  {
+    timestamp: '04:15 - 04:55',
+    seconds: 255,
+    title: 'First Month Setup & Suspense Account #900',
+    speaker: 'Prashantt',
+    summary: 'Clicking "First Month Setup" creates journal entries. Unrecognized items are dumped into Suspense Account #900 for human CPA review.',
+    category: 'workflow',
+  },
+  {
+    timestamp: '05:25 - 06:05',
+    seconds: 325,
+    title: 'Subsequent Months & 80-90% Recurring Rule Matching',
+    speaker: 'Prashantt',
+    summary: 'Explains that in any business, 80-90% of transactions are recurring (rent, software, utilities). The macro matches them automatically from month 2 onwards.',
+    category: 'macro',
+  },
+  {
+    timestamp: '06:11 - 06:58',
+    seconds: 371,
+    title: 'Drake Accounting Spreadsheet Import Flow',
+    speaker: 'Prashantt',
+    summary: 'Shows Drake Accounting interface (Tools -> Import -> Spreadsheets) where the final generated journal entry spreadsheet is ingested.',
+    category: 'drake',
+  },
+  {
+    timestamp: '07:20 - 08:05',
+    speaker: 'Prashantt & Ansh',
+    seconds: 440,
+    title: 'Eliminating "Grunt Work" & Role of AI/LLMs',
+    summary: 'Prashantt stresses that CPA time is wasted on grunt copy-paste work. Ansh confirms deterministic rules handle standard batching, while AI handles raw descriptions.',
+    category: 'ai_strategy',
+  },
+  {
+    timestamp: '08:28 - End',
+    seconds: 508,
+    title: 'Exception Reporting & Human-in-the-loop Protocol',
+    speaker: 'Prashantt',
+    summary: 'The immediate requirement is an automated trigger for CSV ingestion, First Month Setup, Exception Report for Suspense 900, and batch completion.',
+    category: 'workflow',
+  },
+];
+
+export const CLIENT_DOSSIER = {
+  partnerName: 'PR Financial & Tax Group',
+  primaryContact: 'Prashantt, CPA & Accounting Professor',
+  strategicPriority: 'Drake Macro Modernization & Ingestion Engine',
+  urgency: 'Active Tax Season (High Stakes)',
+  currentBottleneck: 'Manual copy-pasting of raw bank CSV data into Excel VBA templates and reviewing unassigned accounts.',
+  targetOutcome: 'Zero-touch CSV parsing, automated recurring transaction matching, Suspense Account #900 exception triage, and Drake Accounting formatted export.',
+  quote: '"I spend so much time on grunt work that there is no time left for true financial variance analysis. I need the AI and automation to handle the data plumbing so our CPAs can focus on high-value client advisory."',
+};
